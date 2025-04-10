@@ -1,0 +1,12 @@
+.cartCardTable {
+  border-collapse: separate; /* Ensure border-spacing works */
+}
+.cartCardTr td {
+  font-size: 17px !important;
+  font-family: var(--font-kumbh-sans);
+  padding: 5px;
+}
+
+.cartCardTr td:nth-of-type(2) {
+  padding-left: 70px;
+}

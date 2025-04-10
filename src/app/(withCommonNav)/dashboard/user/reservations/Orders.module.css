@@ -1,0 +1,17 @@
+.activeLink {
+  position: relative;
+}
+
+.activeLink p {
+  font-weight: bold;
+}
+
+.activeLink p::before {
+  content: "";
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #8aba51;
+  border-radius: 25px 25px 0px 0px;
+}
