@@ -6,8 +6,8 @@ import Services from "@/components/HomeSections/Services/Services";
 import HomePageNav from "./_components/HomePageNav";
 
 export const metadata = {
-  title: "Home",
-  description: "This is the official home page of BookaTable",
+  title: "BookaTable | Effortless Restaurant Reservations for Sushi, Pizza, and More",
+  description: "BookaTable lets you easily discover and reserve your favorite restaurants, from sushi spots to pizza joints and beyond. Quick, hassle-free bookings anytime, anywhere, for any craving!",
 };
 
 export default function HomePage() {
