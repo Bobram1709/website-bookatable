@@ -29,6 +29,12 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="meFajSXIuhtasCJ1jisqePvRwGVSbI4OU_px3hwoiDU"
+        />
+      </head>
       <body
         className={`${poppins.className} ${kumbhSans.variable} max-w-8xl flex min-h-screen flex-col`}
       >
