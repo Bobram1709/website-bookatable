@@ -11,7 +11,10 @@ export const metadata = {
     template: "%s | Bookatable",
   },
   description:
-    "The official homepage of the bookatable restaurant which enable diners to customize their booking by requesting a specific table location or view.",
+    "This is the official homepage of the bookatable restaurant which enable diners to customize their booking by requesting a specific table location or view.",
+  verification: {
+    google: "meFajSXIuhtasCJ1jisqePvRwGVSbI4OU_px3hwoiDU",
+  },
 };
 
 const kumbhSans = Kumbh_Sans({
@@ -29,12 +32,6 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="meFajSXIuhtasCJ1jisqePvRwGVSbI4OU_px3hwoiDU"
-        />
-      </head>
       <body
         className={`${poppins.className} ${kumbhSans.variable} max-w-8xl flex min-h-screen flex-col`}
       >
