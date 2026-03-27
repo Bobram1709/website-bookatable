@@ -31,21 +31,6 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-WW1SZJBZYQ"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-WW1SZJBZYQ');
-          `}
-        </Script>
-      </head>
       <body
         className={`${poppins.className} ${kumbhSans.variable} max-w-8xl flex min-h-screen flex-col`}
       >
@@ -70,6 +55,19 @@ export default function RootLayout({ children }) {
           shadow="0 0 10px #8ABA51,0 0 5px #000"
           zIndex={1600}
         />
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WW1SZJBZYQ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WW1SZJBZYQ');
+          `}
+        </Script>
       </body>
     </html>
   );
